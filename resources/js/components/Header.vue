@@ -20,16 +20,17 @@
 
 
 
-                <!-- <li class="w-30 searcher">
+                <li class="w-30 searcher">
                     <form @submit.prevent="updateSearchValue">
                         <input type="text" class="w-100 pl-4" placeholder="Search.." name="search" v-model="searchText" >
                         <button type="submit"><i class="fa fa-search"></i></button>
 
                     </form>
                 </li>
+
                 <li>
                     <router-link :to="{name: 'geeks', params: {text:'all'}}" class=" HeaderButton">Geeks</router-link>
-                </li> -->
+                </li>
 
                 <li v-if="loggedIn && isGeek">
                     <a class="" href="" @click.prevent="">{{ currentUser.name.split(' ')[0] }}
